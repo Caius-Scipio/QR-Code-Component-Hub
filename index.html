@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::before,
+      *::after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: 'Outfit', sans-serif;
+          --white: hsl(0, 0%, 100%);
+          --grayLight: hsl(212, 45%, 89%);
+          --blueGray: hsl(120, 15%, 55%);
+          --blueDark: hsl(218, 44%, 22%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      html {
+        background-color: var(--grayLight);
+      }
+
+      body {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+
+      .w3-container {
+        display: grid;
+        place-items: center;
+        padding-top: 30%;
+      }
+
+      .w3-container:nth-child(2) {
+        margin: 0 auto;
+        width: 50%;
+        background-color: var(--white);
+      }
+
+      .w3-card-4 {
+        background-color: var(--white);
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      .card__title {
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 1.1em 0;
+        line-height: normal;
+      }
+
+      .card__section--text {
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 0.5em;
+      }
+
+      .card__text {
+        opacity: 0.5;
+        font-size: 0.55rem;
+        line-height: normal;
+      }
+
+      @media (min-width: 1440px) {
+        img {
+        border-radius: 20px;
+        }
+
+        .w3-card-4 {
+          border-radius: 30px;
+        }
+
+        .card__title {
+          font-size: 3.5rem;
+          padding: 0.7em 0;
+        }
+
+        .card__section--text {
+        padding-bottom: 4em;
+        }
+
+        .card__text {
+          font-size: 2.5rem;
+        }
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="w3-container w3-center">
+      <section class="w3-card-4 w3-center" style= "width:50%">
+        <img src="./images/image-qr-code.png" alt="qr code" width="100%">
+        <p class="card__title">Improve your front-end skills by building projects</p>
+        <section class="card__section--text">
+          <p class="card__text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </section>
+      </section>
+    </div>
+    <hr />
+    <Footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Caius Scipio</a>.
+    </Footer>
+  </body>
+</html>
