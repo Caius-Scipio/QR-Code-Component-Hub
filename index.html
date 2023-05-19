@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | QR code component</title>
 
@@ -23,99 +22,52 @@
           font-family: 'Outfit', sans-serif;
           --white: hsl(0, 0%, 100%);
           --grayLight: hsl(212, 45%, 89%);
-          --blueGray: hsl(120, 15%, 55%);
+          --blueGray: hsl(220, 15%, 55%);
           --blueDark: hsl(218, 44%, 22%);
       }
 
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
-      html {
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 100vh;
         background-color: var(--grayLight);
       }
 
-      body {
-        max-width: 100%;
+      .card {
         margin: 0 auto;
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: var(--white);
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
       }
 
       img {
         border-radius: 10px;
       }
 
-      .w3-container {
-        display: grid;
-        place-items: center;
-        padding-top: 30%;
-      }
-
-      .w3-container:nth-child(2) {
-        margin: 0 auto;
-        width: 50%;
-        background-color: var(--white);
-      }
-
-      .w3-card-4 {
-        background-color: var(--white);
-        margin: 0 auto;
-        padding: 15px;
-        border-radius: 10px;
-      }
-
       .card__title {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.4rem;
         font-weight: 700;
-        font-size: 0.8rem;
-        padding: 1.1em 0;
-        line-height: normal;
-      }
-
-      .card__section--text {
-        width: 95%;
-        margin: 0 auto;
-        padding-bottom: 0.5em;
+        color: var(--blueDark)
       }
 
       .card__text {
-        opacity: 0.5;
-        font-size: 0.55rem;
-        line-height: normal;
-      }
-
-      @media (min-width: 1440px) {
-        img {
-        border-radius: 20px;
-        }
-
-        .w3-card-4 {
-          border-radius: 30px;
-        }
-
-        .card__title {
-          font-size: 3.5rem;
-          padding: 0.7em 0;
-        }
-
-        .card__section--text {
-        padding-bottom: 4em;
-        }
-
-        .card__text {
-          font-size: 2.5rem;
-        }
+        text-align: center;
+        margin-bottom: 20xp;
+        color: var(--blueGray);
       }
 
     </style>
 
   </head>
   <body>
-    <div class="w3-container w3-center">
-      <section class="w3-card-4 w3-center" style= "width:50%">
+    <div class="container">
+      <section class="card" style= "width:50%">
         <img src="./images/image-qr-code.png" alt="qr code" width="100%">
         <p class="card__title">Improve your front-end skills by building projects</p>
         <section class="card__section--text">
@@ -124,9 +76,5 @@
       </section>
     </div>
     <hr />
-    <Footer>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Caius Scipio</a>.
-    </Footer>
   </body>
 </html>

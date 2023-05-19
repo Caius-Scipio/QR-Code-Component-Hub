@@ -33,15 +33,12 @@ This is my solution to the [QR code component challenge on Frontend Mentor](http
 ### Built with
 
 - Semantic HTML5 markup
-- w3.css
 - CSS custom properties
 - Mobile-first workflow
 
 ### What I learned
 
-There's probably countless ways to solve this problem and I may have found one. When working with w3.css, it has a good starting point for common elements that I can then go in and add to or modify if needed.
-
-I also started looking into CSS naming conventions. I used BEM today for my classes. I think it's a nice combination to quickly see if it's my CSS that is causing issues or not.
+There's probably countless ways to solve this problem and I may have found one. I also started looking into CSS naming conventions. I decided to have a go at BEM today for my classes.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -51,9 +48,9 @@ I also started looking into CSS naming conventions. I used BEM today for my clas
 
 ```
 ```css
-@media (min-width: 1440px) {
-    /*forced me to work mobile first*/
-}
+  .class {
+    margin: 0 auto; /*Because is saves*/
+  }
 ```
 
 ### Continued development
