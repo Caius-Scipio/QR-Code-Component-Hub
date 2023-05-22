@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <title><h1>Frontend Mentor | QR code component</h1></title>
+    <title>Frontend Mentor | QR code component</title>
 
   </head>
   <body>
-    <div class="container">
+    <div class="container" role="card">
       <section class="card" style= "width:50%">
         <img src="./images/image-qr-code.png" alt="qr code" width="100%">
-        <p class="card__title">Improve your front-end skills by building projects</p>
+        <h1 class="card__title">Improve your front-end skills by building projects</h1>
         <section class="card__section--text">
-          <p class="card__text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+          <h2 class="card__text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
         </section>
       </section>
     </div>
@@ -33,6 +32,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Outfit', sans-serif;
+      font-size: 15px;
       --white: hsl(0, 0%, 100%);
       --grayLight: hsl(212, 45%, 89%);
       --blueGray: hsl(220, 15%, 55%);
@@ -64,13 +64,14 @@
   .card__title {
     text-align: center;
     margin: 20px 0;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: var(--blueDark)
   }
 
   .card__text {
     text-align: center;
+    font-size: 0.6rem;
     margin-bottom: 20xp;
     color: var(--blueGray);
   }
